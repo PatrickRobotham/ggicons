@@ -1,0 +1,14 @@
+Package: ggicons
+Type: Package
+Title: Plots with custom icons
+Version: 0.1.0
+Author: Patrick Robotham
+Maintainer: Patrick Robotham <patrick@bellroy.com>
+Description: Plot with custom icons. Currently supports only png.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2,
+    png,
+    grid,
+    purrr
