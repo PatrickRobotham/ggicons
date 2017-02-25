@@ -2,6 +2,7 @@ ggicons
 -----------
 Icon geom for ggplot2
 
+Lets you create scatter plots using custom icons.
 # Installing
 
 ``` r
@@ -21,3 +22,5 @@ ggplot(downloads_with_icon, aes(x = Jan2017, y = change_percentage, file_path = 
    geom_icon()
 
 ```
+
+![](tidyverse_plot.png)
