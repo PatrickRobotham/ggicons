@@ -2,14 +2,18 @@
 % Please edit documentation in R/geom_icon.R
 \name{geom_icon}
 \alias{geom_icon}
-\title{geom_icon}
+\title{Icons}
 \usage{
 geom_icon(mapping = NULL, data = NULL, stat = "identity",
   position = "identity", na.rm = FALSE, show.legend = NA,
   inherit.aes = TRUE, ...)
 }
 \description{
-geom_icon
+The icon geom, like the point geom, is used to create scatterplots.
+Icons are specified by filepaths into an image file.
+}
+\details{
+
 }
 \examples{
 data(tidyverse_downloads)

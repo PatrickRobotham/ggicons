@@ -29,13 +29,15 @@ drawDetails.icon <- function(x, recording = FALSE){
 }
 
 #'
-#' geom_icon
 #' @export
-#' Icons
+#' geom_icon
+#' @title Icons
 #'
+#' @description
 #' The icon geom, like the point geom, is used to create scatterplots.
 #' Icons are specified by filepaths into an image file.
 #'
+#' @details
 #'
 #' @examples
 #' data(tidyverse_downloads)
