@@ -6,7 +6,7 @@ Lets you create scatter plots using custom icons.
 # Installing
 
 ``` r
-devtools::install_github(PatrickRobotham/ggicons)
+devtools::install_github("PatrickRobotham/ggicons"")
 ```
 
 # Usage
