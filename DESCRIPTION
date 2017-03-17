@@ -11,5 +11,5 @@ LazyData: true
 Imports: ggplot2,
     png,
     grid,
-    purrr
+    dplyr
 RoxygenNote: 6.0.1
