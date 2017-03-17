@@ -19,7 +19,7 @@ iconGrob <- function(x,y,file_path, width = 0.1, height = 0.1){
        width = width, height = height)
 }
 
-#'do @export
+#' @export
 drawDetails.icon <- function(x, recording = FALSE){
   for (i in seq_along(x$file_path)) {
     image <- png::readPNG(x$file_path[[i]])
