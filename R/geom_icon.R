@@ -28,7 +28,9 @@ drawDetails.icon <- function(x, recording = FALSE){
   }
 }
 
+#'
 #' geom_icon
+#' @export
 #' Icons
 #'
 #' The icon geom, like the point geom, is used to create scatterplots.
@@ -41,7 +43,7 @@ drawDetails.icon <- function(x, recording = FALSE){
 #'    mutate(file_path = system.file("icons",paste0(package,".png"),"ggicons"))
 #'  ggplot(downloads_with_icon, aes(x = Jan2017, y = change_percentage, file_path = file_path)) +
 #'  geom_icon()
-#'  @export
+#'
 geom_icon <- function(mapping = NULL, data = NULL, stat = "identity",
                       position = "identity", na.rm = FALSE, show.legend = NA,
                       inherit.aes = TRUE, ...){

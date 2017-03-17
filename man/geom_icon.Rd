@@ -2,16 +2,14 @@
 % Please edit documentation in R/geom_icon.R
 \name{geom_icon}
 \alias{geom_icon}
-\title{geom_icon
-Icons}
+\title{geom_icon}
 \usage{
 geom_icon(mapping = NULL, data = NULL, stat = "identity",
   position = "identity", na.rm = FALSE, show.legend = NA,
   inherit.aes = TRUE, ...)
 }
 \description{
-The icon geom, like the point geom, is used to create scatterplots.
-Icons are specified by filepaths into an image file.
+geom_icon
 }
 \examples{
 data(tidyverse_downloads)
@@ -19,4 +17,5 @@ downloads_with_icon <- tidyverse_downloads \%>\%
    mutate(file_path = system.file("icons",paste0(package,".png"),"ggicons"))
  ggplot(downloads_with_icon, aes(x = Jan2017, y = change_percentage, file_path = file_path)) +
  geom_icon()
+
 }
