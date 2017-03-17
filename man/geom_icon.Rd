@@ -21,7 +21,7 @@ library(ggplot2)
 data(tidyverse_downloads)
 
 downloads_with_icon <- tidyverse_downloads \%>\%
-   mutate(file_path = system.file("icons",paste0(package,".png"),"ggicons"))
+   mutate(file_path = system.file("icons",paste0(package,".png"),package = "ggicons"))
  ggplot(downloads_with_icon, aes(x = Jan2017, y = change_percentage, file_path = file_path)) +
  geom_icon()
 

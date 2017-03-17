@@ -1,3 +1,4 @@
+#' @export
 GeomIcon <- ggplot2::ggproto("GeomIcon", ggplot2::Geom,
   required_aes = c("x", "y", "file_path"),
   default_aes = ggplot2::aes(width = 0.1, height = 0.1),
@@ -12,11 +13,13 @@ GeomIcon <- ggplot2::ggproto("GeomIcon", ggplot2::Geom,
   }
 )
 
+#' @export
 iconGrob <- function(x,y,file_path, width = 0.1, height = 0.1){
   grid::grob(x = x, y = y, file_path = file_path, cl = "icon",
        width = width, height = height)
 }
 
+#'do @export
 drawDetails.icon <- function(x, recording = FALSE){
   for (i in seq_along(x$file_path)) {
     image <- png::readPNG(x$file_path[[i]])
@@ -42,7 +45,7 @@ drawDetails.icon <- function(x, recording = FALSE){
 #' data(tidyverse_downloads)
 #'
 #' downloads_with_icon <- tidyverse_downloads %>%
-#'    mutate(file_path = system.file("icons",paste0(package,".png"),"ggicons"))
+#'    mutate(file_path = system.file("icons",paste0(package,".png"),package = "ggicons"))
 #'  ggplot(downloads_with_icon, aes(x = Jan2017, y = change_percentage, file_path = file_path)) +
 #'  geom_icon()
 #'
